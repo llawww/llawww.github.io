@@ -1,0 +1,244 @@
+@keyframes change-color {
+    0% {background-color:rgb(146, 184, 189);} 
+    20% {background-color: rgb(132, 205, 205);}
+    40%{background-color: rgb(53, 164, 181);}
+    60% {background-color: rgb(54, 165, 180);}
+    80% {background-color: rgb(22, 153, 160);}
+}
+@keyframes changed-color {
+    0% {border:10px solid rgb(164, 160, 160);} 
+    20% {border:10px solid rgb(125, 125, 130);}
+    40%{border:10px solid rgb(95, 95, 93);}
+    60% {border:10px solid rgb(69, 71, 69);}
+    80% {border:10px solid rgb(28, 27, 27);}
+}
+
+@keyframes change{
+    0%{margin-left:500px;}
+    20%{margin-left:0px;}
+    40%{margin-left:-500px;}
+    60%{margin-left:0px;}
+    80%{margin-left:500px;}
+    100%{margin-left:500px;}
+}
+
+.header {
+    background:#aacad6 ;
+    text-align:center;
+    padding:13px;
+    font-family:Courier New;
+    font-size:25px;
+    color:rgb(25, 77, 125);
+}
+
+.header h3{
+    animation-name:change;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+
+.intro img{
+    width:200px;
+    height:200px;   
+    border-radius:100%;
+    border:10px solid gainsboro;
+    animation-name:changed-color;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+
+}
+
+body{
+    margin:0;
+    background: rgb(135, 169, 181); 
+}
+
+.information {
+    display:inline;   
+}
+
+
+
+.test{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    text-align: center;
+    background-color: #8cb9cd;
+    font-family:"Courier New", Courier, monospace;
+    color:#164973
+}
+
+.intro{
+    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline block;
+    margin-top:5px;  
+    text-align:center;                                                      
+    
+
+}
+
+.intro p:hover{
+    color:#164973;
+    font-family:'Courier New', Courier, monospace;      
+}
+
+
+.box{
+    width: auto;
+    height: auto;
+    background-color: rgb(20, 156, 190);
+}
+
+.box-animation{
+    animation-name:change-color;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+     
+}
+
+p{
+    font-family:Tahoma;
+
+
+}
+h4{
+    font-family:Arial Black;
+    color:rgb(21, 101, 125);
+}
+
+.testing{
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:145px;
+    background-color: #94b9c4;
+    opacity: 0.6;
+    margin-right:20px;
+    opacity: 1;
+}
+
+.testing img{
+    width: 50px;
+    height:50px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.testing span{
+     padding-bottom:10px;
+      font-size:20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+.information .hobbies {
+    height:65px;
+    background-color: rgb(118, 186, 208);
+    text-align: center;
+    width:auto;
+    top:0;
+}
+.information .hobbies h2{
+    padding:15px;
+}
+
+.flip_wrap{
+    display:inline-flex;
+    width:1000px;
+    height:220px;
+    margin: 10px;
+    perspective:800px;
+    box-sizing:border-box;
+    margin-left:200px;
+  }
+  .flip{
+    width: 100%;
+    height:100%;
+    backface-visibility:hidden;
+    transition: all 1s ease;
+    transform-style:preserve-3d;
+  }
+  .side{
+    width:90%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    text-align:center;
+    opacity:0.6;
+  }
+  .front{
+    backface-visibility:hidden;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+  .back{
+    backface-visibility:hidden;
+    transform: rotateY(180deg);
+    padding: 0 36px;
+    box-sizing:border-box;
+    border:10px solid rgb(36, 85, 136);
+    border-style:dashed;
+  }
+.flip_wrap:hover .flip {
+    transform : rotateY(180deg);
+    
+  }
+
+.edu h2{
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky; 
+    padding:15px;
+    
+}
+
+.edu{
+    margin-top:30px;
+    background-color: rgb(118, 186, 208);
+    height:60px;
+}
+
+.edu2{
+    width:800px;
+    height:500px;
+    background: rgb(108, 175, 197);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+
+
+}
+
+.logo img{
+    padding:50px;
+}
+
+.logo2 img{
+    padding:10px;
+}
+
+.details , .details2 {
+    float:right; 
+    width:500px;
+    height:200px;
+    position:relative;
+    top:20px;
+    right:46px;
+    border-style:double;
+}
+
+
+
+.details p , .details2 p{
+    font-size:18px;
+    margin-left:30px;
+    font-weight:550;
+    font-style:italic;
+    color:#164973;
+}
